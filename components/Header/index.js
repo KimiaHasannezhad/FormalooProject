@@ -9,8 +9,10 @@ export default function Header() {
       <div className="bg-[#8d4efc] flex flex-row rounded-3xl p-5 overflow-x-scroll">
         {blockItems?.reverse().map((item, i) => {
           return (
-            <div className="border-2 p-1 m-2 text-white rounded-md min-w-fit">
+            <div className="shadow-lg p-1 m-2 text-white font-bold rounded-md min-w-fit bg-white bg-opacity-30">
+
               <button
+              className="p-1"
                 id="linkBtn"
                 onClick={() => {
                   console.log(item.refrenceName);
