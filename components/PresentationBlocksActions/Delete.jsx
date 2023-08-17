@@ -6,21 +6,7 @@ import Modal from "react-modal";
 export default function HandleDeletePresentationBlock(props) {
   const { blockData, showDeleteModal, setShowDeleteModal } = props;
   const { blockItems, setBlockItems } = useContext(BlockItemsContext);
-  const [selectedContentType, setSelectedContentType] = useState();
-  const [inputValue, setInputValue] = useState();
 
-  //   const renderSwitch = (params) => {
-  //     switch (params?.blockType) {
-  //       case "text":
-  //         return setSelectedContentType("text");
-  //       case "image":
-  //         return setSelectedContentType("image");
-  //       case "HTML Block":
-  //         return setSelectedContentType("HTML Block");
-  //       default:
-  //         return "";
-  //     }
-  //   };
   return (
     <section className=" text-center py-3 text-gray-600 w-3/5 self-center ">
       <Modal

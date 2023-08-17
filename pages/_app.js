@@ -5,7 +5,6 @@ import { SwitchModeProvider } from "@/context/ModeProvider";
 import { BlockItemsProvider } from "@/context/BlockItemsProvider";
 import { SingleOptionsProvider } from "@/context/SingleOptionsProvider";
 import { MultipleOptionsProvider } from "@/context/MultipleOptions";
-import { GlobalRefProvider } from "@/context/GlobalRefProvider";
 
 function MyApp({ Component, pageProps }) {
   const [isClient, setIsClient] = useState(false);
@@ -23,17 +22,15 @@ function MyApp({ Component, pageProps }) {
               content="width=device-width,minimum-scale=1,initial-scale=1"
             />
           </Head>
-          <GlobalRefProvider>
-            <MultipleOptionsProvider>
-              <SingleOptionsProvider>
-                <BlockItemsProvider>
-                  <SwitchModeProvider>
-                    <Component {...pageProps} />
-                  </SwitchModeProvider>
-                </BlockItemsProvider>
-              </SingleOptionsProvider>
-            </MultipleOptionsProvider>
-          </GlobalRefProvider>
+          <MultipleOptionsProvider>
+            <SingleOptionsProvider>
+              <BlockItemsProvider>
+                <SwitchModeProvider>
+                  <Component {...pageProps} />
+                </SwitchModeProvider>
+              </BlockItemsProvider>
+            </SingleOptionsProvider>
+          </MultipleOptionsProvider>
         </>
       )}
     </>

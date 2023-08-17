@@ -13,7 +13,7 @@ export const BlockItemsProvider = (props) => {
       contentType: "image",
       value:
         "https://www.formaloo.com/en/wp-content/themes/formaloo3/assets/images/Logo.svg",
-      refrenceName: "block No1",
+      refrenceName: "block 1",
       order: "1",
     },
     {
@@ -21,7 +21,7 @@ export const BlockItemsProvider = (props) => {
       blockType: "intraction",
       contentType: "text input",
       value: "defualt value",
-      refrenceName: "block No0",
+      refrenceName: "block 0",
       order: "2",
     },
   ]);

@@ -11,7 +11,6 @@ export default function BlockItemsDisplay(props) {
   const [showEditModal, setShowEditModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [blockData, setBlockData] = useState();
-  const [isImgValid , setIsImgValid] = useState();
 
   const [dragId, setDragId] = useState();
 

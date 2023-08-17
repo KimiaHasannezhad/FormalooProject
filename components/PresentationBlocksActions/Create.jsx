@@ -1,7 +1,6 @@
 import { BlockItemsContext } from "@/context/BlockItemsProvider";
 import { MultipleOptionsContext } from "@/context/MultipleOptions";
 import { SingleOptionsContext } from "@/context/SingleOptionsProvider";
-// import { StoragedDataContext } from "@/context/StoragedData";
 import { useContext, useState } from "react";
 
 export default function HandleCreatePresentationBlock(props) {
@@ -45,7 +44,7 @@ export default function HandleCreatePresentationBlock(props) {
                   selectedContentType === "checkbox single"
                     ? singleOptions
                     : multipleOptions,
-                refrenceName: "block No" + blockItems.length,
+                refrenceName: "block" + blockItems.length,
                 order: blockItems.length,
               },
               ...blockItems,

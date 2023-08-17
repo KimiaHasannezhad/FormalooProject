@@ -1,5 +1,5 @@
 import { BlockItemsContext } from "@/context/BlockItemsProvider";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "react-range-slider-input/dist/style.css";
@@ -250,7 +250,7 @@ export default function HandleCreateIntractionBlock(props) {
             selectedContentType === "checkbox single"
               ? singleOptions
               : multipleOptions,
-          refrenceName: "block No" + blockItems.length ,
+          refrenceName: "block" + blockItems.length ,
           order: blockItems.length,
         },
         ...blockItems,
@@ -274,7 +274,7 @@ export default function HandleCreateIntractionBlock(props) {
               selectedContentType === "checkbox single"
                 ? singleOptions
                 : multipleOptions,
-            refrenceName: "block No" + blockItems.length ,
+            refrenceName: "block" + blockItems.length ,
             order:blockItems.length,
           },
           ...blockItems,

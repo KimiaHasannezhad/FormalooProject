@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { useState } from "react";
-import Modal from "react-modal";
 import Select from "react-select";
 import IntractionSelect from "./IntractionSelect";
 import PresentationSelect from "./PresentationSelect";

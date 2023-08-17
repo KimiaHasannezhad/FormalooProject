@@ -1,8 +1,6 @@
 import { useState, useContext } from "react";
 import { BlockItemsContext } from "@/context/BlockItemsProvider";
-
 import Modal from "react-modal";
-import Calendar from "react-calendar";
 
 export default function HandleEditPresentationBlock(props) {
   const { blockData, showEditModal, setShowEditModal } = props;
