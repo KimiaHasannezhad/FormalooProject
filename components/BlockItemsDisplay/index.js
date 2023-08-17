@@ -98,7 +98,9 @@ export default function BlockItemsDisplay(props) {
                     onDrop={handleDrop}
                   >
                     <div className="flex flex-row flex-wrap w-4/5">
-                      <span className="p-2 overflow-x-scroll">{item.value}</span>
+                      <span className="p-2 overflow-x-scroll">
+                        {item.value}
+                      </span>
                     </div>
                     {mode === "edit" && (
                       <EditAndDeleteComponent blockData={item} />
@@ -219,8 +221,8 @@ export default function BlockItemsDisplay(props) {
                         onChange={(e) => {
                           item.value = `0 to ${e.target.value}`;
                           setBlockItems([
-                            ...blockItems.filter((el) => el.id !== item.id),
                             item,
+                            ...blockItems.filter((el) => el.id !== item.id),
                           ]);
                         }}
                       />
