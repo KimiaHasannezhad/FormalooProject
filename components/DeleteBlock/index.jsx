@@ -3,7 +3,7 @@ import { BlockItemsContext } from "@/context/BlockItemsProvider";
 
 import Modal from "react-modal";
 
-export default function HandleDeletePresentationBlock(props) {
+export default function HandleDeleteBlock(props) {
   const { blockData, showDeleteModal, setShowDeleteModal } = props;
   const { blockItems, setBlockItems } = useContext(BlockItemsContext);
 

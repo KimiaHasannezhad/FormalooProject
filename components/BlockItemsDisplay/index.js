@@ -1,6 +1,6 @@
 import Image from "next/image";
 import HandleEditPresentationBlock from "../PresentationBlocksActions/Edit";
-import HandleDeletePresentationBlock from "../PresentationBlocksActions/Delete";
+import HandleDeletePresentationBlock from "../DeleteBlock";
 import Calendar from "react-calendar";
 import Select from "react-select";
 import { useState } from "react";
